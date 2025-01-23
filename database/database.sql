@@ -1,0 +1,12 @@
+CREATE DATABASE ng_games2425_DAMB;
+USE ng_games2425_DAMB;
+
+CREATE TABLE games(
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    subtitle VARCHAR(255),
+    favorite BOOLEAN,
+    description VARCHAR(255),
+    image VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
