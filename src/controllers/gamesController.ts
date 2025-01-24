@@ -26,7 +26,7 @@ class GamesController{
             if (game.length>0){
                 return res.status(200).json({
                     status:true,
-                    data:game
+                    data:game[0]
                 })
             }
             res.status(404).json({
